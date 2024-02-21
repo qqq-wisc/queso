@@ -60,6 +60,15 @@ Example command:
 java --enable-preview -cp target/QUESO-1.0-jar-with-dependencies.jar Optimizer -c benchmarks/decomposed/decomp0/nam_rz/decomp0_tof_3.qasm -g nam -r rules_q3_s6_nam.txt -sr rules_q3_s3_nam_symb.txt -t 3600 -o optimized_benchmarks -j "nam"
 ```
 
+The following rule sizes result in the best performance:
+|           | Not Symbolic | Symbolic |
+|-----------|--------------|----------|
+| Nam       | 6            | 3        |
+| IBM (old) | 4            | 3        |
+| Rigetti   | 5            | 3        |
+| Ion trap  | 3            | 3        |
+
+
 ## References
 [1] Amanda Xu, Abtin Molavi, Lauren Pick, Swamit Tannu, Aws Albarghouthi. Synthesizing quantum-circuit optimizers. Proceedings of the ACM on Programming Languages. Volume 7, PLDI, 2023. https://doi.org/10.1145/3591254
 

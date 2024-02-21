@@ -868,13 +868,7 @@ public class Optimizer {
                                                         int maxSymbQubits,
                                                         int maxSymbSize) {
         DirectedMultigraph<Node, Edge> patternBefore = qasmToDag(findBefore);
-        if (!GraphTests.isConnected(patternBefore)) {
-            return circuit;
-        }
         DirectedMultigraph<Node, Edge> patternAfter = qasmToDag(findAfter);
-        if (!GraphTests.isConnected(patternAfter)) {
-            return circuit;
-        }
 
         Map<String, Expr> angleMap = new HashMap<>();
         List<Node> symb = findSymb(circuit, patternBefore, patternAfter, constraints, angleMap, maxSymbQubits, maxSymbSize);
