@@ -1,6 +1,8 @@
+> [!IMPORTANT]  
+> This repository has been subsumed by https://github.com/qqq-wisc/guoq. Please refer to the instructions there on how to use QUESO.
+
 # QUESO
 This is a tool for synthesizing quantum-circuit optimizers as described in [[1]](https://arxiv.org/abs/2211.09691). 
-This branch represents the latest version of QUESO and should be used for best results.
 To reproduce the experimental conditions of the paper, see the [Zenodo artifact](https://zenodo.org/records/7809285), which contains a Docker image with everything set up.
 
 ## Dependencies
